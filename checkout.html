@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Island Tech Essentials | Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="loadCheckoutTotal()">
+  <header>
+    <div class="logo">Island Tech Essentials</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h2>Checkout</h2>
+    <form onsubmit="return confirmOrder()">
+      <label for="customerName">Full Name</label>
+      <input type="text" id="customerName" />
+
+      <label for="shippingAddress">Shipping Address</label>
+      <textarea id="shippingAddress" rows="4"></textarea>
+
+      <label for="amountPaid">Amount Paid</label>
+      <input type="number" id="amountPaid" step="0.01" />
+
+      <p><strong>Total Due: $<span id="checkoutTotal">0.00</span></strong></p>
+
+      <button type="submit" class="btn">Confirm Order</button>
+      <button type="button" class="btn btn-secondary" onclick="cancelOrder()">Cancel</button>
+
+      <p id="checkoutMessage"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Island Tech Essentials. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

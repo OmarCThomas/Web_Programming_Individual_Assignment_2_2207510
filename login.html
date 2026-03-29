@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Island Tech Essentials \ Login</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <div clas="logo">Island Tech Essentials</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart</a>
+                <a href="checkout.html">Checkout</a>
+                <a href="about.html">Home</a>
+            </nav>
+        </header>
+
+        <main class="form-container">
+            <h2>Login</h2>
+            <form onsubmit="return validaLogin()">
+                <Label for="loginUsername">Username</Label>
+                <input type="text id=loginUsername" />
+
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" />
+
+                <button type="submit" class="btn">Login</button>
+                <p id="loginMessage"></p>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Island Tech Essentials. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

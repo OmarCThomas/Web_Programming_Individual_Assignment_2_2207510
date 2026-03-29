@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Island Tech Essentials | Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Island Tech Essentials</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <main class="products-section">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="../Assets/earbuds.jpg" alt="Wireless Earbuds">
+        <h3>Wireless Earbuds</h3>
+        <p>Compact Bluetooth earbuds for calls and music.</p>
+        <p><strong>$45.00</strong></p>
+        <button class="btn" onclick="addToCart('Wireless Earbuds', 45)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="../Assets/tripod.jpg" alt="Phone Tripod">
+        <h3>Phone Tripod</h3>
+        <p>Adjustable tripod for content creation and photos.</p>
+        <p><strong>$25.00</strong></p>
+        <button class="btn" onclick="addToCart('Phone Tripod', 25)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="../Assets/hub.jpg" alt="USB-C Charging Hub" />
+        <h3>USB-C Charging Hub</h3>
+        <p>Multi-port charging and data transfer hub.</p>
+        <p><strong>$35.00</strong></p>
+        <button class="btn" onclick="addToCart('USB-C Charging Hub', 35)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="../Assets/powerbank.jpg" alt="Portable Power Bank" />
+        <h3>Portable Power Bank</h3>
+        <p>Reliable backup charging for your mobile devices.</p>
+        <p><strong>$30.00</strong></p>
+        <button class="btn" onclick="addToCart('Portable Power Bank', 30)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="../Assets/coolingpad.jpg" alt="Laptop Cooling Pad" />
+        <h3>Laptop Cooling Pad</h3>
+        <p>Keeps your laptop cool during long hours of use.</p>
+        <p><strong>$28.00</strong></p>
+        <button class="btn" onclick="addToCart('Laptop Cooling Pad', 28)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="../Assets/keyboard.jpg" alt="Bluetooth Keyboard" />
+        <h3>Bluetooth Keyboard</h3>
+        <p>Wireless keyboard for tablets, phones, and laptops.</p>
+        <p><strong>$40.00</strong></p>
+        <button class="btn" onclick="addToCart('Bluetooth Keyboard', 40)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="../Assets/ringlight.jpg" alt="Ring Light" />
+        <h3>Ring Light</h3>
+        <p>Perfect lighting for videos, selfies, and livestreams.</p>
+        <p><strong>$50.00</strong></p>
+        <button class="btn" onclick="addToCart('Ring Light', 50)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="../Assets/mouse.jpg" alt="Wireless Mouse" />
+        <h3>Wireless Mouse</h3>
+        <p>Portable and smooth mouse for work and study.</p>
+        <p><strong>$20.00</strong></p>
+        <button class="btn" onclick="addToCart('Wireless Mouse', 20)">Add to Cart</button>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Island Tech Essentials. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
